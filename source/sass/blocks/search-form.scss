@@ -1,0 +1,113 @@
+.search-form {
+  position: relative;
+
+  width: 220px;
+
+  @include vp-1023 {
+    display: none;
+    width: 100%;
+  }
+}
+
+.page-header.is-open .search-form {
+  display: block;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 8px 10px 8px 28px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: $color-transparent;
+  border: 2px solid $color-transparent;
+  border-radius: 0;
+
+  @include vp-1023 {
+    padding-bottom: 7px;
+    padding-left: 50px;
+
+    color: $color-default-white;
+
+    background-color: rgba($color-default-white, 0.15);
+    border-radius: 21px;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $ff-poppins;
+    color: $color-gray;
+
+    @include vp-1023 {
+      color: $color-transparent;
+    }
+  }
+
+  &:hover {
+    border-bottom-color: $color-gray;
+
+    @include vp-1023 {
+      border-color: $color-default-white;
+    }
+  }
+
+  &:focus {
+    border-bottom-color: $color-default-black;
+    outline: none;
+
+    @include vp-1023 {
+      border-color: $color-default-white;
+    }
+  }
+}
+
+.search-form__button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  padding: 0;
+
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  @include vp-1023 {
+    left: 12px;
+
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+  }
+}
+
+.search-form__button:focus {
+  outline: none;
+}
+
+.search-form__button svg {
+  @include vp-1023 {
+    width: 16px;
+    height: 16px;
+
+    fill: $color-default-white;
+  }
+}
+
+@media (hover: hover), screen and (min-width: 0\0) {
+  .search-form__button:hover svg,
+  .search-form__button:focus svg {
+    fill: $color-red;
+  }
+}
+
+.search-form__button:active svg {
+  opacity: 0.3;
+}
