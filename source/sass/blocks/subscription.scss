@@ -1,0 +1,123 @@
+.subscription {
+  width: 43%;
+
+  @include vp-1023 {
+    width: 100%;
+    margin-right: 115px;
+    margin-bottom: 46px;
+  }
+  @include vp-767 {
+    width: 100%;
+    margin-right: 20px;
+    margin-right: 0;
+    margin-bottom: 46px;
+  }
+}
+
+.subscription__title {
+  margin: 0;
+  margin-bottom: 9px;
+
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: $ff-cormorant-garamond;
+  letter-spacing: 0.02em;
+
+  @include vp-767 {
+    margin-bottom: 13px;
+  }
+}
+
+.subscription__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-gray;
+}
+
+.subscription__form {
+  position: relative;
+}
+
+.subscription__input input {
+  width: 100%;
+  padding: 9px 150px 8px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+
+  background-color: $color-transparent;
+  border: none;
+  border-bottom: 1px solid $color-default-white;
+
+  @include vp-767 {
+    padding-right: 130px;
+  }
+
+  &:hover {
+    border-bottom-color: $color-gray;
+  }
+
+  &:focus {
+    border-bottom-color: $color-default-white;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $ff-poppins;
+    color: $color-gray;
+  }
+}
+
+.subscription__botton {
+  position: absolute;
+  top: 4px;
+  right: 0;
+
+  max-width: 170px;
+  padding: 5px 45px 5px 5px;
+
+  font-size: 16px;
+  line-height: 21px;
+  font-family: $ff-poppins;
+  color: $color-default-white;
+
+  background-color: $color-transparent;
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 34px 10px;
+  border: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    top: 2px;
+
+    max-width: 130px;
+    padding: 5px 43px 5px 5px;
+
+    background-position: calc(100% + 4px)  center;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
