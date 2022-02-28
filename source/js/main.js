@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {setMenuControl} from './modules/menu';
+import {initAccordions} from './modules/accordions/init-accordion';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     setMenuControl();
+    initAccordions();
   });
 });
 
