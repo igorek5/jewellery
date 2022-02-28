@@ -646,6 +646,7 @@ button,
 
 .container {
   width: 100%;
+  min-width: 320px;
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 30px;
@@ -1006,6 +1007,184 @@ button,
   opacity: 0.2;
 }
 
+.slider {
+  position: relative;
+  padding-top: 512px;
+  padding-bottom: 110px;
+}
+
+.slider__wrapper {
+  position: relative;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.slider__title {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: "Cormorant-Garamond", "Arial", sans-serif;
+  text-align: center;
+}
+
+.slider__title:active {
+  opacity: 0.4;
+}
+
+.slider__title span {
+  margin-top: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Poppins", "Arial", sans-serif;
+  border-bottom: 1px solid #A87B62;
+}
+
+.slider__title a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slider__title a:active {
+  opacity: 0.4;
+}
+
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.slider__button {
+  position: absolute;
+  top: 54px;
+  width: 29px;
+  height: 29px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/svg/arrow-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 29px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.slider__button--next {
+  right: 0;
+  background-image: url("../img/svg/arrow-next.svg");
+}
+
+.slider__button:active {
+  opacity: 0.4;
+}
+
+.slider__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.slider__pagination-bullet {
+  min-width: 20px;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #9B9997;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.slider__pagination-bullet.swiper-pagination-bullet-active {
+  color: #1D1613;
+  pointer-events: none;
+}
+
+.product {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 15px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.product__title {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.product__costs {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.product__link {
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.product__link:active {
+  opacity: 0.2;
+}
+
 .page-footer {
   color: #ffffff;
   background-color: #000000;
@@ -1203,79 +1382,6 @@ button,
   left: 3px;
 }
 
-.swiper {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.swiper-slide {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  height: 294px;
-  margin-right: 15px;
-  font-size: 18px;
-  text-align: center;
-  background: #ffffff;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.swiper-pagination {
-  z-index: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: red;
-}
-
-.swiper-pagination-bullet {
-  z-index: 600;
-  width: 20px;
-  height: 20px;
-  font-size: 12px;
-  line-height: 20px;
-  text-align: center;
-  color: #000000;
-  background: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  color: #000000;
-  background: #007aff;
-}
-
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1343,6 +1449,48 @@ button,
     opacity: 0.2;
   }
 
+  .slider__title:hover,
+  .slider__title:focus {
+    opacity: 0.6;
+  }
+
+  .slider__title:active {
+    opacity: 0.4;
+  }
+
+  .slider__title a:hover,
+  .slider__title a:focus {
+    opacity: 0.6;
+  }
+
+  .slider__title a:active {
+    opacity: 0.4;
+  }
+
+  .slider__button:hover,
+  .slider__button:focus {
+    opacity: 0.6;
+  }
+
+  .slider__button:active {
+    opacity: 0.4;
+  }
+
+  .slider__pagination-bullet:hover,
+  .slider__pagination-bullet:focus {
+    color: #1D1613;
+  }
+
+  .product__link:hover,
+  .product__link:focus {
+    outline: none;
+    opacity: 0.5;
+  }
+
+  .product__link:active {
+    opacity: 0.2;
+  }
+
   .page-footer__link:hover,
   .page-footer__link:focus {
     opacity: 0.6;
@@ -1373,7 +1521,7 @@ button,
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 45px;
   }
 
   .page-header.is-open {
@@ -1578,7 +1726,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 
   .modal__wrapper {
@@ -1625,6 +1773,10 @@ button,
 
   .main-nav {
     padding: 0 15px 130px;
+  }
+
+  .slider__button {
+    display: none;
   }
 
   .page-footer__wrapper {
