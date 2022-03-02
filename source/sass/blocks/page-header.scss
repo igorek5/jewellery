@@ -28,16 +28,20 @@
 
   @include vp-1023 {
     display: block;
-    padding: 136px 45px 42px;
+    padding: 84px 45px 42px;
   }
   @include vp-767 {
-    padding: 110px 15px 42px;
+    padding: 50px 15px 42px;
   }
 }
 
 .page-header__wrapper {
+  border-bottom: 1px solid $color-border-light;
+
   @include vp-1023 {
     position: relative;
+
+    border: none;
   }
 }
 
