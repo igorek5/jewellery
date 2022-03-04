@@ -19,10 +19,10 @@
 }
 
 .rouble {
+  font-weight: 400 !important;
   font-family: $ff-rouble;
   /* stylelint-disable */
   text-transform: lowercase !important;
-  font-weight: 400 !important;
   /* stylelint-enable */
 }
 
@@ -44,10 +44,13 @@
 }
 
 .no-scroll {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  @include vp-1023 {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .scroll-lock-ios {
