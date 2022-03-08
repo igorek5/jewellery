@@ -1,0 +1,38 @@
+.button {
+  display: block;
+  padding: 22px;
+  padding-bottom: 23px;
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: $ff-poppins;
+  text-align: center;
+  color: $color-default-white;
+
+  background-color: $color-brown;
+  border: 1px solid $color-brown;
+  cursor: pointer;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+}

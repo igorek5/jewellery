@@ -6,9 +6,9 @@
     margin-right: 115px;
     margin-bottom: 46px;
   }
+
   @include vp-767 {
     width: 100%;
-    margin-right: 20px;
     margin-right: 0;
     margin-bottom: 46px;
   }
@@ -38,13 +38,16 @@
   color: $color-gray;
 }
 
-.subscription__form {
-  position: relative;
+.subscription__form form {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+
+  border-bottom: 1px solid $color-default-white;
 }
 
 .subscription__input input {
   width: 100%;
-  padding: 9px 150px 8px 0;
+  padding: 9px 30px 8px 0;
 
   font-weight: 500;
   font-size: 14px;
@@ -53,19 +56,14 @@
 
   background-color: $color-transparent;
   border: none;
-  border-bottom: 1px solid $color-default-white;
 
   @include vp-767 {
-    padding-right: 130px;
+    padding-right: 20px;
   }
 
-  &:hover {
-    border-bottom-color: $color-gray;
-  }
-
+  &:hover,
   &:focus {
-    border-bottom-color: $color-default-white;
-    outline: none;
+    outline: 1px solid $color-gray;
   }
 
   &::placeholder {
@@ -78,10 +76,6 @@
 }
 
 .subscription__botton {
-  position: absolute;
-  top: 4px;
-  right: 0;
-
   max-width: 170px;
   padding: 5px 45px 5px 5px;
 
@@ -99,8 +93,6 @@
   cursor: pointer;
 
   @include vp-767 {
-    top: 2px;
-
     max-width: 130px;
     padding: 5px 43px 5px 5px;
 
@@ -112,6 +104,7 @@
     &:focus {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.4;
     }

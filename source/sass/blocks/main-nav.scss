@@ -1,21 +1,29 @@
 .main-nav {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 18px 30px 18px;
-
+  border-top: 1px solid $color-border-light;
 
   @include vp-1023 {
     display: none;
-    padding: 4px 45px 18px;
-  }
-  @include vp-767 {
-    padding: 0 15px 18px;
+    border: none;
   }
 }
 
 .page-header.is-open .main-nav {
   @include vp-1023 {
     display: block;
+  }
+}
+
+.main-nav__wrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 18px 30px 4px;
+
+  @include vp-1023 {
+    padding: 4px 45px 18px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px 18px;
   }
 }
 
@@ -29,18 +37,28 @@
 
   list-style: none;
 
-  grid-column-gap: 36px;
-  grid-row-gap: 36px;
   @include vp-1023 {
     display: none;
     margin-bottom: 40px;
     padding: 0;
   }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
 }
 
 .main-nav__item {
+  margin-right: 36px;
+  margin-bottom: 15px;
+
   @include vp-1023 {
+    margin: 0;
     margin-bottom: 21px;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
