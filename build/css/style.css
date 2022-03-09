@@ -482,7 +482,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #1D1613;
+  color: #1d1613;
   background-color: #ffffff;
 }
 
@@ -624,14 +624,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-weight: 400 !important;
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -690,8 +682,8 @@ button,
   font-family: "Poppins", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
-  background-color: #A87B62;
-  border: 1px solid #A87B62;
+  background-color: #a87b62;
+  border: 1px solid #a87b62;
   cursor: pointer;
 }
 
@@ -856,7 +848,7 @@ button,
 }
 
 .page-header__logo-icon {
-  fill: #A87B62;
+  fill: #a87b62;
 }
 
 .page-header__user-menu {
@@ -943,7 +935,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .search-form input::-moz-placeholder {
@@ -951,7 +943,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .search-form input:-ms-input-placeholder {
@@ -959,7 +951,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .search-form input::-ms-input-placeholder {
@@ -967,7 +959,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .search-form input::placeholder {
@@ -975,11 +967,11 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .search-form input:hover {
-  border-bottom-color: #9B9997;
+  border-bottom-color: #9b9997;
 }
 
 .search-form input:focus {
@@ -1009,7 +1001,7 @@ button,
 }
 
 .main-nav {
-  border-top: 1px solid #F6F5F4;
+  border-top: 1px solid #f6f5f4;
 }
 
 .main-nav__wrapper {
@@ -1071,7 +1063,7 @@ button,
 
 .intro {
   color: #ffffff;
-  background-color: #A87B62;
+  background-color: #a87b62;
   background-image: url("../img/content/intro-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1162,7 +1154,7 @@ button,
   font-size: 16px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #a87b62;
 }
 
 .slider__title a {
@@ -1239,14 +1231,14 @@ button,
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #9B9997;
+  color: #9b9997;
   background: none;
   border: 0;
   cursor: pointer;
 }
 
 .slider__pagination-bullet.swiper-pagination-bullet-active {
-  color: #1D1613;
+  color: #1d1613;
   pointer-events: none;
 }
 
@@ -1263,11 +1255,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: start;
+  align-self: start;
   width: 100%;
   text-align: center;
   background: #ffffff;
-  -ms-flex-item-align: start;
-  align-self: start;
 }
 
 .product img {
@@ -1336,7 +1328,7 @@ button,
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #a87b62;
 }
 
 .blog__link:active {
@@ -1356,7 +1348,7 @@ button,
 .articles {
   display: -ms-grid;
   display: grid;
-  background-color: #F0EAE4;
+  background-color: #f0eae4;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
@@ -1399,7 +1391,7 @@ button,
   min-height: 300px;
   padding: 67px 56px 72px;
   text-align: center;
-  background-color: #F0EAE4;
+  background-color: #f0eae4;
 }
 
 .articles__wrapper--trends {
@@ -1440,7 +1432,7 @@ button,
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .articles__title {
@@ -1458,7 +1450,7 @@ button,
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #a87b62;
 }
 
 .articles__link:active {
@@ -1489,13 +1481,13 @@ button,
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  border: 1px solid #A87B62;
+  border: 1px solid #a87b62;
 }
 
 .questions__item {
   position: relative;
   text-align: left;
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #a87b62;
 }
 
 .questions__item:last-child {
@@ -1535,7 +1527,7 @@ button,
   width: 100%;
   padding: 42px 100px 35px 43px;
   text-align: start;
-  color: #1D1613;
+  color: #1d1613;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -1564,7 +1556,6 @@ button,
 
 .gallery__title {
   max-width: 500px;
-  margin: 0;
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 700;
@@ -1587,7 +1578,7 @@ button,
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #a87b62;
 }
 
 .gallery__link:active {
@@ -1707,7 +1698,7 @@ button,
   margin-bottom: 35px;
   font-size: 16px;
   line-height: 21px;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription__form form {
@@ -1733,7 +1724,7 @@ button,
 
 .subscription__input input:hover,
 .subscription__input input:focus {
-  outline: 1px solid #9B9997;
+  outline: 1px solid #9b9997;
 }
 
 .subscription__input input::-webkit-input-placeholder {
@@ -1741,7 +1732,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription__input input::-moz-placeholder {
@@ -1749,7 +1740,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription__input input:-ms-input-placeholder {
@@ -1757,7 +1748,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription__input input::-ms-input-placeholder {
@@ -1765,7 +1756,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription__input input::placeholder {
@@ -1773,7 +1764,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription__botton {
@@ -1899,11 +1890,11 @@ button,
   display: block;
   font-size: 16px;
   line-height: 21px;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .catalog__pagination-link.active {
-  color: #1D1613;
+  color: #1d1613;
   pointer-events: none;
 }
 
@@ -1924,12 +1915,12 @@ button,
 
 .filter__input-wrapper {
   margin-bottom: 35px;
-  border: 1px solid #A87B62;
+  border: 1px solid #a87b62;
 }
 
 .filter__block {
   position: relative;
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #a87b62;
 }
 
 .filter__block::before {
@@ -1969,7 +1960,7 @@ button,
   line-height: 21px;
   font-family: "Poppins", "Arial", sans-serif;
   text-align: left;
-  color: #1D1613;
+  color: #1d1613;
   background: none;
   border: none;
   cursor: pointer;
@@ -2024,11 +2015,11 @@ button,
   left: 0;
   width: 15px;
   height: 15px;
-  border: 1px solid #A87B62;
+  border: 1px solid #a87b62;
 }
 
 .filter__item--checkbox input:checked + .filter__label::before {
-  background-color: #A87B62;
+  background-color: #a87b62;
 }
 
 .filter__item--checkbox input:hover + .filter__label::before,
@@ -2043,7 +2034,7 @@ button,
 .filter__scale {
   width: 100%;
   height: 1px;
-  background-color: #F0EAE4;
+  background-color: #f0eae4;
 }
 
 .filter__bar {
@@ -2051,7 +2042,7 @@ button,
   width: 54%;
   height: 1px;
   margin-left: 22%;
-  background-color: #A87B62;
+  background-color: #a87b62;
 }
 
 .filter__toggle-wrapper {
@@ -2067,7 +2058,7 @@ button,
 .filter__range-toggle {
   width: 15px;
   height: 15px;
-  background-color: #A87B62;
+  background-color: #a87b62;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -2090,12 +2081,200 @@ button,
 }
 
 .filter__button-reset {
-  color: #1D1613;
+  color: #1d1613;
   background-color: rgba(255, 255, 255, 0);
 }
 
 .filter__close {
   display: none;
+}
+
+.login {
+  position: relative;
+  max-width: 430px;
+  padding: 190px 45px 60px;
+  background-color: #f0eae4;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 138px;
+  background-color: #f0eae4;
+  background-image: url("../img/content/login-decoration@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: "Cormorant-Garamond", "Arial", sans-serif;
+  text-align: center;
+}
+
+.login__field input {
+  width: 100%;
+  padding: 9px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", "Arial", sans-serif;
+  color: #1d1613;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #1d1613;
+}
+
+.login__field input::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+.login__field input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+.login__field input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+.login__field input::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+.login__field input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+
+.login__field input:hover,
+.login__field input:focus {
+  border-bottom: 1px solid #9b9997;
+  outline: none;
+}
+
+.login__field {
+  position: relative;
+}
+
+.login__field.is-invalid input {
+  border-bottom: 1px solid #ff0000;
+}
+
+.login__field--email {
+  margin-bottom: 25px;
+}
+
+.login__field--password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.login__error {
+  display: none;
+}
+
+.login__field.is-invalid .login__error {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ff0000;
+}
+
+.login__password-recovery {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: end;
+  color: #9b9997;
+}
+
+.login__password-recovery:active {
+  opacity: 0.5;
+}
+
+.login__button {
+  margin-bottom: 15px;
+}
+
+.login__account-recovery {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.login__account-recovery span {
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9b9997;
+}
+
+.login__account-recovery a:active {
+  opacity: 0.4;
+}
+
+.login__close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login__close::before,
+.login__close::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  width: 14px;
+  height: 2px;
+  background-color: #1d1613;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.login__close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -2203,7 +2382,7 @@ button,
 
   .slider__pagination-bullet:hover,
   .slider__pagination-bullet:focus {
-    color: #1D1613;
+    color: #1d1613;
   }
 
   .product__link:hover,
@@ -2236,7 +2415,7 @@ button,
 
   .questions__button:hover,
   .questions__button:focus {
-    background-color: #F0EAE4;
+    background-color: #f0eae4;
   }
 
   .gallery__link:hover,
@@ -2286,7 +2465,7 @@ button,
 
   .catalog__pagination-link:hover,
   .catalog__pagination-link:focus {
-    color: #1D1613;
+    color: #1d1613;
   }
 
   .filter__accordion-button:hover,
@@ -2296,11 +2475,42 @@ button,
 
   .filter__range-toggle:hover,
   .filter__range-toggle:focus {
-    background-color: #9B9997;
+    background-color: #9b9997;
   }
 
   .filter__range-toggle:active {
     opacity: 0.6;
+  }
+
+  .login__password-recovery:hover,
+  .login__password-recovery:focus {
+    color: #1d1613;
+  }
+
+  .login__password-recovery:active {
+    opacity: 0.5;
+  }
+
+  .login__account-recovery a:hover,
+  .login__account-recovery a:focus {
+    opacity: 0.7;
+  }
+
+  .login__account-recovery a:active {
+    opacity: 0.4;
+  }
+
+  .login__close:hover::before,
+  .login__close:hover::after,
+  .login__close:focus::before,
+  .login__close:focus::after {
+    background-color: #a87b62;
+  }
+
+  .login__close:active::before,
+  .login__close:active::after {
+    background-color: #a87b62;
+    opacity: 0.8;
   }
 }
 
@@ -2340,7 +2550,7 @@ button,
     z-index: 2;
     overflow: hidden;
     overflow-y: auto;
-    background-color: #A87B62;
+    background-color: #a87b62;
   }
 
   .page-header__top {
@@ -2785,7 +2995,7 @@ button,
   }
 
   .filter__block:last-child {
-    border-bottom: 1px solid #A87B62;
+    border-bottom: 1px solid #a87b62;
   }
 
   .filter__accordion-button {
@@ -2804,7 +3014,7 @@ button,
     width: 32px;
     height: 32px;
     padding: 0;
-    background-color: #1D1613;
+    background-color: #1d1613;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -2832,6 +3042,10 @@ button,
 
   .filter__button-wrapper {
     padding: 0 40px 40px;
+  }
+
+  .login {
+    max-width: 442px;
   }
 }
 
@@ -3111,7 +3325,6 @@ button,
 
   .subscription {
     width: 100%;
-    margin-right: 20px;
     margin-right: 0;
     margin-bottom: 46px;
   }
@@ -3216,6 +3429,24 @@ button,
   .filter__button-wrapper {
     padding: 0 15px 15px;
   }
+
+  .login {
+    max-width: 270px;
+    padding: 124px 15px 45px;
+  }
+
+  .login::before {
+    height: 84px;
+  }
+
+  .login__title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .login__field.is-invalid .login__error {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -3231,10 +3462,16 @@ button,
 @media (max-width: 1023px) and (hover: hover), screen and (max-width: 1023px) and (min-width: 0\0) {
   .filter__close:hover,
   .filter__close:focus {
-    background-color: #A87B62;
+    background-color: #a87b62;
   }
 
   .filter__close:active {
     opacity: 0.8;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .login::before {
+    background-image: url("../img/content/login-decoration@2x.jpg");
   }
 }

@@ -1,5 +1,5 @@
-const pageHeader = document.querySelector('.page-header');
-const toggleMenu = document.querySelector('.page-header__toggle');
+const pageHeader = document.querySelector('[data-menu="wrapper-open"]');
+const toggleMenu = document.querySelector('[data-menu="toggle-menu"]');
 
 const isEscEvent = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
 

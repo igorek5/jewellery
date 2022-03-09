@@ -1,7 +1,7 @@
-const filterButton = document.querySelector('.catalog__filter-button');
-const modalFilter = document.querySelector('.filter--modal');
-const modalFilterOverlay = document.querySelector('.filter__modal-overlay');
-const closeFilterButton = document.querySelector('.filter__close');
+const filterButton = document.querySelector('[data-filter="button-open"]');
+const modalFilter = document.querySelector('[data-filter="modal-filter"]');
+const modalFilterOverlay = document.querySelector('[data-filter="overlay-filter"]');
+const closeFilterButton = document.querySelector('[data-filter="close-filter"]');
 
 const isEscEvent = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
 

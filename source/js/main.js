@@ -4,6 +4,7 @@ import {setMenuControl} from './modules/menu';
 import {initAccordions} from './modules/accordions/init-accordion';
 import {initFilterModal} from './modules/filter-modal';
 import {initSwiper} from './vendor/init-swiper';
+import {initFormValidate} from './modules/form-validate/init-form-validate';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setMenuControl();
     initAccordions();
     initFilterModal();
+    initFormValidate();
   });
 });
 
