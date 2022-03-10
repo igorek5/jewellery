@@ -5,7 +5,6 @@ const closeFilterButton = document.querySelector('[data-filter="close-filter"]')
 
 const isEscEvent = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
 
-
 const filterEscHandler = (evt) => {
   if (isEscEvent(evt)) {
     filterCloseHandler(evt);

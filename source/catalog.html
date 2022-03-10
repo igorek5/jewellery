@@ -41,7 +41,7 @@
             </svg>
           </a>
           <div class="page-header__user-menu">
-            <a class="page-header__login" data-open-modal="login" href="#">Login</a>
+            <a class="page-header__login" data-open-modal="login" href="login.html">Login</a>
             <a class="page-header__basket" href="#">
               <span class="page-header__basket-text">Cart<span class="page-header__basket-number">0</span></span>
               <svg class="page-header__basket-icon" width="18" height="16">
@@ -521,14 +521,14 @@
   </div>
 
   <section class="modal modal--preload" data-modal="login">
-    <div class="modal__wrapper login__wrapper">
+    <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content login">
         <h2 class="login__title">Log In</h2>
         <div data-validate="data-validate">
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="login__field login__field--email" data-validate-type="email">
-              <label for="login-email">
+              <label>
                 <span class="visually-hidden">Your E-mail</span>
                 <input type="email" name="email" placeholder="Your E-mail" data-focus>
               </label>
@@ -536,7 +536,7 @@
             </div>
 
             <div class="login__field login__field--password" data-validate-type="text">
-              <label for="login-password">
+              <label>
                 <span class="visually-hidden">Password</span>
                 <input minlength="4" type="password" name="password" placeholder="Password">
               </label>

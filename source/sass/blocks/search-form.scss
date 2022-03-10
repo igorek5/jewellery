@@ -111,3 +111,37 @@
 .search-form__button:active svg {
   opacity: 0.3;
 }
+
+.search-form__field {
+  position: relative;
+}
+
+.search-form__error {
+  display: none;
+}
+
+.search-form__field.is-invalid .search-form__error {
+  position: absolute;
+  display: block;
+  bottom: -19px;
+  right: 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-red;
+}
+
+.search-form__field.is-invalid input {
+  border-bottom-color: $color-red;
+
+  @include vp-1023 {
+    border-color: $color-red;
+  }
+}
+
+.search-form__field.is-valid input {
+  border-bottom-color: $color-green;
+
+  @include vp-1023 {
+    border-color: $color-green;
+  }
+}

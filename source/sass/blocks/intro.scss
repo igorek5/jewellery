@@ -136,15 +136,24 @@
   font-family: $ff-cormorant-garamond;
   text-align: center;
 
+  @include vp-1023 {
+    margin-right: 17px;
+  }
+
   @include vp-767 {
     font-size: 34px;
     line-height: 36px;
+    margin-right: 0;
   }
 
   &--inner-page {
     font-weight: 500;
     font-size: 22px;
     line-height: 29px;
+
+    @include vp-1023 {
+      margin-right: 0;
+    }
 
     @include vp-767 {
       font-size: 22px;

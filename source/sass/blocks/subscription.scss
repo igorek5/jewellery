@@ -114,3 +114,31 @@
     opacity: 0.4;
   }
 }
+
+.subscription__input {
+  position: relative;
+}
+
+.subscription__input.is-invalid input {
+  outline: 1px solid $color-red;
+}
+
+.subscription__input.is-valid input {
+  outline: 1px solid $color-green;
+}
+
+.subscription__error {
+  display: none;
+}
+
+.subscription__input.is-invalid .subscription__error {
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+
+  display: block;
+
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-red;
+}

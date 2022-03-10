@@ -21,19 +21,25 @@
     <header class="page-header" data-menu="wrapper-open">
       <div class="page-header__wrapper">
         <div class="page-header__top">
-          <button class="page-header__toggle" data-menu="toggle-menu" type="button" aria-label="Открыть/закрыть меню"></button>
+          <button class="page-header__toggle" data-menu="toggle-menu" type="button"
+            aria-label="Открыть/закрыть меню"></button>
           <div class="page-header__search search-form">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label>
-                <span class="visually-hidden">Search the site</span>
-                <input name="search" placeholder="Type here to search" type="search">
-              </label>
-              <button class="search-form__button" type="submit" aria-label="search">
-                <svg width="14" height="14">
-                  <use href="img/sprite_auto.svg#icon-search"></use>
-                </svg>
-              </button>
-            </form>
+            <div data-validate="data-validate">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <div class="search-form__field" data-validate-type="text">
+                  <label>
+                    <span class="visually-hidden">Search the site</span>
+                    <input name="search" placeholder="Type here to search" type="search" minlength="1">
+                  </label>
+                  <div class="search-form__error">Enter text</div>
+                </div>
+                <button class="search-form__button" type="submit" aria-label="search">
+                  <svg width="14" height="14">
+                    <use href="img/sprite_auto.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
           <a class="page-header__logo">
             <svg class="page-header__logo-icon" aria-label="logo «Jewellery»" width="66" height="66">
@@ -569,13 +575,14 @@
         <div class="page-footer__subscription subscription">
           <h2 class="subscription__title">The good stuff in&nbsp;your&nbsp;inbox</h2>
           <p class="subscription__text">News and updates from CH. No&nbsp;spam,&nbsp;we&nbsp;promise.</p>
-          <div class="subscription__form">
+          <div class="subscription__form" data-validate="data-validate">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="subscription__input">
+              <div class="subscription__input" data-validate-type="email">
                 <label>
                   <span class="visually-hidden">Your E-mail</span>
-                  <input type="email" name="email" placeholder="Your E-mail" required>
+                  <input type="email" name="email" placeholder="Your E-mail">
                 </label>
+                <div class="subscription__error">Email is not correct</div>
               </div>
               <button class="subscription__botton" type="submit">Sign Up</button>
             </form>
@@ -653,14 +660,14 @@
   </div>
 
   <section class="modal modal--preload" data-modal="login">
-    <div class="modal__wrapper login__wrapper">
+    <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content login">
         <h2 class="login__title">Log In</h2>
         <div data-validate="data-validate">
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="login__field login__field--email" data-validate-type="email">
-              <label for="login-email">
+              <label>
                 <span class="visually-hidden">Your E-mail</span>
                 <input type="email" name="email" placeholder="Your E-mail" data-focus>
               </label>
@@ -668,7 +675,7 @@
             </div>
 
             <div class="login__field login__field--password" data-validate-type="text">
-              <label for="login-password">
+              <label>
                 <span class="visually-hidden">Password</span>
                 <input minlength="4" type="password" name="password" placeholder="Password">
               </label>

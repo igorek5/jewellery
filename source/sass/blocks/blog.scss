@@ -27,6 +27,10 @@
   text-align: center;
   letter-spacing: 0.03em;
 
+  @include vp-1023 {
+    margin-bottom: 19px;
+  }
+
   @include vp-767 {
     margin-bottom: 20px;
   }

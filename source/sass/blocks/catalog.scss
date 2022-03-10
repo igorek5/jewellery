@@ -1,3 +1,9 @@
+.catalog {
+  position: relative;
+
+  overflow-x: hidden;
+}
+
 .catalog__wrapper {
   display: grid;
   min-width: 320px;
@@ -32,6 +38,8 @@
 }
 
 .catalog__list {
+  position: relative;
+
   display: grid;
   margin-bottom: 72px;
 
@@ -49,6 +57,30 @@
     grid-row-gap: 25px;
     grid-template-columns: 1fr 1fr;
   }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -37px;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: $color-border-light;
+
+    @include vp-1023 {
+      bottom: -34px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &::after {
+    transform: translateX(-100%);
+  }
 }
 
 .catalog__pagination {
@@ -61,6 +93,8 @@
 }
 
 .catalog__pagination-control {
+  max-width: 100px;
+
   font-size: 16px;
   line-height: 21px;
 
@@ -87,6 +121,7 @@
 .catalog__pagination-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 500px;
   margin: 0;
   margin-right: 18px;
   padding: 0;

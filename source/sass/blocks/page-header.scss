@@ -141,6 +141,10 @@
     left: 15px;
   }
 
+  &--page {
+    pointer-events: none;
+  }
+
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {
