@@ -2,8 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {setMenuControl} from './modules/menu';
 import {initAccordions} from './modules/accordions/init-accordion';
-import {initFilterModal} from './modules/filter-modal';
-import {initSwiper} from './vendor/init-swiper';
+import {initSwiper} from './modules/init-swiper';
 import {initFormValidate} from './modules/form-validate/init-form-validate';
 
 // ---------------------------------
@@ -25,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     setMenuControl();
     initAccordions();
-    initFilterModal();
     initFormValidate();
   });
 });

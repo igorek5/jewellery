@@ -1,19 +1,21 @@
 /* global Swiper */
 /* Swiper 7.4.1 */
 
-import './swiper';
-
 export const initSwiper = () => {
   const slider = new Swiper('.swiper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 30,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
     navigation: {
       nextEl: '.slider__button--next',
       prevEl: '.slider__button--prev',
     },
     breakpoints: {
       320: {
+        observer: true,
         slidesPerView: 2,
         slidesPerGroup: 2,
         pagination: {
@@ -28,6 +30,7 @@ export const initSwiper = () => {
         },
       },
       768: {
+        observer: true,
         slidesPerView: 2,
         slidesPerGroup: 2,
         pagination: {
@@ -40,6 +43,7 @@ export const initSwiper = () => {
         },
       },
       1024: {
+        observer: true,
         slidesPerView: 4,
         slidesPerGroup: 4,
         pagination: {

@@ -94,7 +94,7 @@
         <div data-validate="data-validate">
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="login__field login__field--email" data-validate-type="email">
-              <label for="login-email">
+              <label>
                 <span class="visually-hidden">Your E-mail</span>
                 <input type="email" name="email" placeholder="Your E-mail" data-focus>
               </label>
@@ -102,7 +102,7 @@
             </div>
 
             <div class="login__field login__field--password" data-validate-type="text">
-              <label for="login-password">
+              <label>
                 <span class="visually-hidden">Password</span>
                 <input minlength="4" type="password" name="password" placeholder="Password">
               </label>
@@ -209,41 +209,6 @@
       </div>
     </footer>
   </div>
-
-  <section class="modal modal--preload" data-modal="login">
-    <div class="modal__wrapper login__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content login">
-        <h2 class="login__title">Log In</h2>
-        <div data-validate="data-validate">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="login__field login__field--email" data-validate-type="email">
-              <label for="login-email">
-                <span class="visually-hidden">Your E-mail</span>
-                <input type="email" name="email" placeholder="Your E-mail" data-focus>
-              </label>
-              <div class="login__error">Email is not correct</div>
-            </div>
-
-            <div class="login__field login__field--password" data-validate-type="text">
-              <label for="login-password">
-                <span class="visually-hidden">Password</span>
-                <input minlength="4" type="password" name="password" placeholder="Password">
-              </label>
-              <div class="login__error">min 4 characters</div>
-            </div>
-            <a href="#" class="login__password-recovery">Forgot your password?</a>
-            <button type="submit" class="button login__button">Log In</button>
-          </form>
-        </div>
-        <div class="login__account-recovery">
-          <span>Don’t have an account?</span>
-          <a href="#">Sign up</a>
-        </div>
-        <button class="login__close" type="button" aria-label="close popup" data-close-modal></button>
-      </div>
-    </div>
-  </section>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

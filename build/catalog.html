@@ -99,14 +99,14 @@
       <section class="catalog">
         <h2 class="visually-hidden">product list</h2>
         <div class="catalog__wrapper">
-          <button class="button catalog__filter-button" data-filter="button-open">Filter</button>
-          <section class="filter filter--modal" data-filter="modal-filter">
+          <button class="button catalog__filter-button" data-open-modal="filter">Filter</button>
+          <section class="filter filter--modal" data-modal="filter">
             <div class="filter__modal-wrapper">
-              <div class="filter__modal-overlay" data-filter="overlay-filter"></div>
+              <div class="filter__modal-overlay" data-close-modal></div>
               <div class="filter__madal-content">
                 <h3 class="visually-hidden">product filter</h3>
                 <form action="https://echo.htmlacademy.ru/" method="get">
-                  <div class="accordion filter__input-wrapper" data-accordion="parent" data-single>
+                  <div class="accordion filter__input-wrapper" data-accordion="parent">
                     <div class="accordion__element filter__block is-active" data-accordion="element">
                       <fieldset>
                         <legend>
@@ -169,11 +169,11 @@
                         </ul>
                       </fieldset>
                     </div>
-                    <div class="accordion__element filter__block" data-accordion="element">
+                    <div class="accordion__element filter__block is-active" data-accordion="element">
                       <fieldset>
                         <legend>
                           <button data-accordion="button" type="button"
-                            class="accordion__button filter__accordion-button">Price</button>
+                            class="accordion__button filter__accordion-button filter__accordion-button--price">Price</button>
                         </legend>
                         <div class="accordion__content" data-accordion="content">
                           <div class="filter__range">
@@ -201,7 +201,7 @@
                   <div class="filter__button-wrapper">
                     <button class="button filter__button" type="submit">Apply</button>
                     <button class="button filter__button-reset" type="reset">Clear all</button>
-                    <button class="filter__close" type="button" data-filter="close-filter" aria-label="close filter"></button>
+                    <button class="filter__close" type="button" data-close-modal aria-label="close filter"></button>
                   </div>
                 </form>
               </div>

@@ -1,89 +1,84 @@
-.filter--modal {
+.filter {
   @include vp-1023 {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-
-    background-color: rgba($color-gray, 0.8);
 
     visibility: hidden;
     opacity: 0;
 
     pointer-events: none;
-
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 }
 
-.filter__modal-wrapper {
-  @include vp-1023 {
-    position: relative;
+.filter--modal.is-active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
 
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
-    @include vp-767 {
-      padding: 100px 20px;
-    }
+  background-color: rgba($color-gray, 0.8);
+  visibility: visible;
+  opacity: 1;
+
+  pointer-events: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
-.filter__modal-overlay {
-  @include vp-1023 {
-    position: absolute;
-    top: 0;
-    left: 0;
+.filter--modal.is-active .filter__modal-wrapper {
+  position: relative;
 
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 100px 60px;
 
-    cursor: pointer;
+  @include vp-767 {
+    padding: 100px 20px;
   }
+}
+
+.filter--modal.is-active .filter__modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
 }
 
 .filter__madal-content {
   width: 250px;
+}
 
-  @include vp-1023 {
-    position: relative;
+.filter--modal.is-active .filter__madal-content {
+  position: relative;
 
-    width: 458px;
+  width: 425px;
 
-    background-color: $color-default-white;
-    box-shadow: 0 5px 32px;
-  }
+  background-color: $color-default-white;
+  box-shadow: 0 5px 32px;
 
   @include vp-767 {
     width: 100%;
     max-width: 380px;
   }
-}
-
-.filter--modal.is-active {
-  visibility: visible;
-  opacity: 1;
-
-  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
-
-  pointer-events: auto;
 }
 
 .filter__input-wrapper {
@@ -101,6 +96,10 @@
 
   border-bottom: 1px solid $color-brown;
 
+  &--price {
+    padding-bottom: 20px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -114,6 +113,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15px 8px;
+
+    @include vp-1023 {
+      top: 45px;
+      right: 41px;
+
+      width: 20px;
+      height: 14px;
+
+      background-size: 20px 14px;
+    }
   }
 
   &:last-child {
@@ -154,11 +163,27 @@
   cursor: pointer;
 
   @include vp-1023 {
-    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+
+    font-size: 18px;
+    line-height: 23px;
   }
 
   @include vp-767 {
     padding-left: 15px;
+  }
+
+  &--price {
+    padding-bottom: 18px;
+
+    @include vp-1023 {
+      padding-top: 20px;
+      padding-bottom: 21px;
+      padding-left: 19px;
+      padding-right: 15px;
+    }
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {
@@ -170,7 +195,7 @@
 }
 
 .filter__block.is-active .filter__accordion-button {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .filter__block.is-active::before {
@@ -184,10 +209,11 @@
   padding-left: 35px;
 
   list-style: none;
+}
 
-  @include vp-1023 {
-    padding-left: 60px;
-  }
+.filter--modal.is-active .filter__list {
+  padding-right: 85px;
+  padding-left: 40px;
 
   @include vp-767 {
     padding-left: 35px;
@@ -200,6 +226,10 @@
 
 .filter__item {
   margin-bottom: 9px;
+
+  @include vp-1023 {
+    margin-bottom: 17px;
+  }
 }
 
 .filter__label {
@@ -215,6 +245,11 @@
   cursor: pointer;
 
   user-select: none;
+
+  @include vp-1023 {
+    font-size: 16px;
+    line-height: 21px;
+  }
 
   &::before {
     content: "";
@@ -239,7 +274,7 @@
 }
 
 .filter__range {
-  padding: 6px 25px 40px 25px;
+  padding: 6px 25px 50px 25px;
 }
 
 .filter__scale {
@@ -297,10 +332,10 @@
 .filter__toggle-wrapper span {
   position: absolute;
   top: 20px;
-  left: -12px;
+  left: -8px;
 
   display: block;
-  width: 80px;
+  width: 65px;
 }
 
 .filter__button {
@@ -315,58 +350,56 @@
 
 .filter__close {
   display: none;
+}
 
-  @include vp-1023 {
+.filter--modal.is-active .filter__close {
+  position: absolute;
+  top: -14px;
+  right: -16px;
+
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  background-color: $color-text-black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
-    top: -14px;
-    right: -16px;
+    top: 15px;
+    left: 9px;
 
-    display: block;
-    width: 32px;
-    height: 32px;
-    padding: 0;
+    width: 14px;
+    height: 2px;
 
-    background-color: $color-text-black;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+    background-color: $color-default-white;
+    transform: rotate(45deg);
+  }
 
+  &::after {
+    transform: rotate(-45deg);
+  }
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 9px;
-
-      width: 14px;
-      height: 2px;
-
-      background-color: $color-default-white;
-      transform: rotate(45deg);
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-brown;
     }
 
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    @media (hover: hover), screen and (min-width: 0\0) {
-      &:hover,
-      &:focus {
-        background-color: $color-brown;
-      }
-
-      &:active {
-        opacity: 0.8;
-      }
+    &:active {
+      opacity: 0.8;
     }
   }
 }
 
-.filter__button-wrapper {
-  @include vp-1023 {
-    padding: 0 40px 40px;
-  }
+.filter--modal.is-active .filter__button-wrapper {
+  padding: 0 40px 40px;
 
   @include vp-767 {
     padding: 0 15px 15px;
