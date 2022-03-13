@@ -1,21 +1,19 @@
 /* global Swiper */
 /* Swiper 7.4.1 */
 
-export const initSwiper = () => {
-  const slider = new Swiper('.swiper', {
+const breakpoint = window.matchMedia('(min-width:768px)');
+
+export const initSlider = () => {
+  return new Swiper('.slider__wrapper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 30,
-    observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
     navigation: {
       nextEl: '.slider__button--next',
       prevEl: '.slider__button--prev',
     },
     breakpoints: {
       320: {
-        observer: true,
         slidesPerView: 2,
         slidesPerGroup: 2,
         pagination: {
@@ -30,7 +28,6 @@ export const initSwiper = () => {
         },
       },
       768: {
-        observer: true,
         slidesPerView: 2,
         slidesPerGroup: 2,
         pagination: {
@@ -43,7 +40,6 @@ export const initSwiper = () => {
         },
       },
       1024: {
-        observer: true,
         slidesPerView: 4,
         slidesPerGroup: 4,
         pagination: {
@@ -57,5 +53,13 @@ export const initSwiper = () => {
       },
     },
   });
-  return slider;
+};
+
+const breakpointChecker = () => {
+  initSlider();
+};
+
+export const initSwiper = () => {
+  breakpoint.addListener(breakpointChecker);
+  breakpointChecker();
 };

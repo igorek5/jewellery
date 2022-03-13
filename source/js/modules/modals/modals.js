@@ -91,7 +91,7 @@ export class Modals {
 
     if (isEscKey) {
       evt.preventDefault();
-      this.close(document.querySelector('.modal.is-active').dataset.modal);
+      this.close(document.querySelector('[data-modal].is-active').dataset.modal);
     }
   }
 

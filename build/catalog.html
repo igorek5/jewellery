@@ -21,19 +21,25 @@
     <header class="page-header" data-menu="wrapper-open">
       <div class="page-header__wrapper">
         <div class="page-header__top">
-          <button class="page-header__toggle" data-menu="toggle-menu" type="button" aria-label="Открыть/закрыть меню"></button>
+          <button class="page-header__toggle" data-menu="toggle-menu" type="button"
+            aria-label="Открыть/закрыть меню"></button>
           <div class="page-header__search search-form">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label>
-                <span class="visually-hidden">Search the site</span>
-                <input name="search" placeholder="Type here to search" type="search">
-              </label>
-              <button class="search-form__button" type="submit" aria-label="search">
-                <svg width="14" height="14">
-                  <use href="img/sprite_auto.svg#icon-search"></use>
-                </svg>
-              </button>
-            </form>
+            <div data-validate="data-validate">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <div class="search-form__field" data-validate-type="text">
+                  <label>
+                    <span class="visually-hidden">Search the site</span>
+                    <input name="search" placeholder="Type here to search" type="search" minlength="1">
+                  </label>
+                  <div class="search-form__error">Enter text</div>
+                </div>
+                <button class="search-form__button" type="submit" aria-label="search">
+                  <svg width="14" height="14">
+                    <use href="img/sprite_auto.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
           <a class="page-header__logo" href="index.html" aria-label="link to main page">
             <svg class="page-header__logo-icon" aria-label="logo «Jewellery»" width="66" height="66">
@@ -200,7 +206,7 @@
                   </div>
                   <div class="filter__button-wrapper">
                     <button class="button filter__button" type="submit">Apply</button>
-                    <button class="button filter__button-reset" type="reset">Clear all</button>
+                    <button class="button filter__button-reset" type="reset">Clear All</button>
                     <button class="filter__close" type="button" data-close-modal aria-label="close filter"></button>
                   </div>
                 </form>
@@ -437,13 +443,14 @@
         <div class="page-footer__subscription subscription">
           <h2 class="subscription__title">The good stuff in&nbsp;your&nbsp;inbox</h2>
           <p class="subscription__text">News and updates from CH. No&nbsp;spam,&nbsp;we&nbsp;promise.</p>
-          <div class="subscription__form">
+          <div class="subscription__form" data-validate="data-validate">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="subscription__input">
+              <div class="subscription__input" data-validate-type="email">
                 <label>
                   <span class="visually-hidden">Your E-mail</span>
-                  <input type="email" name="email" placeholder="Your E-mail" required>
+                  <input type="email" name="email" placeholder="Your E-mail">
                 </label>
+                <div class="subscription__error">Email is not correct</div>
               </div>
               <button class="subscription__botton" type="submit">Sign Up</button>
             </form>

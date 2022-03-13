@@ -1249,7 +1249,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 47px;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
@@ -2021,7 +2021,7 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 100px 60px;
+  padding: 60px;
 }
 
 .filter--modal.is-active .filter__modal-overlay {
@@ -2126,7 +2126,7 @@ button,
 
 .filter--modal.is-active .filter__list {
   padding-right: 85px;
-  padding-left: 40px;
+  padding-left: 35px;
 }
 
 .filter__block.is-active .filter__list {
@@ -2173,7 +2173,7 @@ button,
 }
 
 .filter__range {
-  padding: 6px 25px 50px 25px;
+  padding: 9px 25px 50px 25px;
 }
 
 .filter__scale {
@@ -2275,7 +2275,7 @@ button,
 .login {
   position: relative;
   max-width: 430px;
-  padding: 190px 45px 60px;
+  padding: 187px 45px 60px;
   background-color: #f0eae4;
 }
 
@@ -2374,7 +2374,7 @@ button,
 }
 
 .login__field--email {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .login__field--password {
@@ -2385,6 +2385,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 6px;
 }
 
 .login__error {
@@ -2403,7 +2404,8 @@ button,
 
 .login__password-recovery {
   display: block;
-  margin-bottom: 40px;
+  max-width: 150px;
+  margin-bottom: 44px;
   margin-left: auto;
   font-weight: 500;
   font-size: 12px;
@@ -2417,7 +2419,7 @@ button,
 }
 
 .login__button {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .login__account-recovery {
@@ -2431,6 +2433,10 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: #9b9997;
+}
+
+.login__account-recovery a {
+  margin-right: 5px;
 }
 
 .login__account-recovery a:active {
@@ -2453,8 +2459,8 @@ button,
   content: "";
   position: absolute;
   top: 9px;
-  left: 4px;
-  width: 14px;
+  left: 3px;
+  width: 16px;
   height: 2px;
   background-color: #1d1613;
   -webkit-transform: rotate(45deg);
@@ -3168,11 +3174,12 @@ button,
   }
 
   .filter__input-wrapper {
+    margin-bottom: 42px;
     border: none;
   }
 
   .filter__block::before {
-    top: 45px;
+    top: 40px;
     right: 41px;
     width: 20px;
     height: 14px;
@@ -3184,18 +3191,23 @@ button,
   }
 
   .filter__accordion-button {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 33px;
     padding-left: 25px;
     font-size: 18px;
     line-height: 23px;
   }
 
   .filter__accordion-button--price {
-    padding-top: 20px;
-    padding-bottom: 21px;
-    padding-left: 19px;
-    padding-right: 15px;
+    padding-top: 35px;
+    padding-bottom: 33px;
+    padding-left: 25px;
+  }
+
+  .filter__block.is-active .filter__accordion-button {
+    padding-top: 35px;
+    padding-bottom: 22px;
+    padding-left: 25px;
   }
 
   .filter__item {
@@ -3203,12 +3215,57 @@ button,
   }
 
   .filter__label {
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .filter__label::before {
+    top: 3px;
+  }
+
+  .filter__range {
+    padding-top: 8px;
+    padding-right: 92px;
+    padding-bottom: 69px;
+  }
+
+  .filter__bar {
+    width: 57%;
+    margin-left: 18%;
+  }
+
+  .filter__range-toggle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .filter__toggle-wrapper span {
+    top: 22px;
+    left: -12px;
     font-size: 16px;
     line-height: 21px;
   }
 
   .login {
     max-width: 442px;
+    padding: 187px 51px 60px;
+  }
+
+  .login__account-recovery a {
+    margin-right: 0;
+  }
+
+  .login__close {
+    width: 25px;
+    height: 25px;
+  }
+
+  .login__close::before,
+  .login__close::after {
+    top: 12px;
+    left: 1px;
+    width: 24px;
   }
 }
 
@@ -3219,6 +3276,13 @@ button,
 
   .intro--inner-page {
     background-image: url("../img/content/intro-catalog-tablet@2x.webp");
+  }
+}
+
+@media (max-width: 1023px) and (max-width: 767px) {
+  .login__close {
+    top: 9px;
+    right: 9px;
   }
 }
 
@@ -3478,6 +3542,8 @@ button,
 
   .page-footer__block {
     display: block;
+    width: 100%;
+    min-width: auto;
     margin-bottom: 44px;
   }
 
@@ -3585,7 +3651,7 @@ button,
   }
 
   .filter--modal.is-active .filter__modal-wrapper {
-    padding: 100px 20px;
+    padding: 60px 20px;
   }
 
   .filter--modal.is-active .filter__madal-content {
@@ -3593,21 +3659,52 @@ button,
     max-width: 380px;
   }
 
+  .filter__input-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .filter__block::before {
+    top: 32px;
+    right: 25px;
+  }
+
   .filter__accordion-button {
-    padding-left: 15px;
+    padding-right: 53px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .filter__block.is-active .filter__accordion-button {
+    padding-top: 27px;
   }
 
   .filter--modal.is-active .filter__list {
     padding-left: 35px;
   }
 
+  .filter__block.is-active .filter__list {
+    margin-bottom: 7px;
+  }
+
+  .filter__range {
+    padding-top: 7px;
+    padding-right: 29px;
+    padding-bottom: 59px;
+    padding-left: 15px;
+  }
+
+  .filter--modal.is-active .filter__close {
+    top: -12px;
+    right: -5px;
+  }
+
   .filter--modal.is-active .filter__button-wrapper {
-    padding: 0 15px 15px;
+    padding: 0 25px 25px;
   }
 
   .login {
     max-width: 270px;
-    padding: 124px 15px 45px;
+    padding: 121px 15px 45px;
   }
 
   .login::before {
@@ -3615,12 +3712,27 @@ button,
   }
 
   .login__title {
+    margin-bottom: 17px;
     font-size: 24px;
     line-height: 31px;
   }
 
+  .login__field--email {
+    margin-bottom: 20px;
+  }
+
   .login__field.is-invalid .login__error {
     font-size: 10px;
+  }
+
+  .login__password-recovery {
+    margin-bottom: 34px;
+  }
+
+  .login__close::before,
+  .login__close::after {
+    left: 4px;
+    width: 16px;
   }
 }
 
