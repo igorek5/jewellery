@@ -5,7 +5,6 @@ const breakpoint = window.matchMedia('(min-width:768px)');
 
 export const initSlider = () => {
   return new Swiper('.slider__wrapper', {
-    loop: true,
     grabCursor: true,
     spaceBetween: 30,
     navigation: {

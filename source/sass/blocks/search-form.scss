@@ -88,10 +88,6 @@
   }
 }
 
-.search-form__button:focus {
-  outline: none;
-}
-
 .search-form__button svg {
   @include vp-1023 {
     width: 16px;

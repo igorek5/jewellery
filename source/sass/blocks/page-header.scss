@@ -21,10 +21,10 @@
 .page-header__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1230px;
   margin: 0 auto;
-  padding: 32px 30px 42px;
+  padding: 32px 30px 32px;
 
   @include vp-1023 {
     display: block;
@@ -111,17 +111,22 @@
 
 .page-header__user-menu {
   display: flex;
+  flex-wrap: wrap;
   max-width: 300px;
+  padding-top: 10px;
 
   @include vp-1023 {
     display: block;
     max-width: none;
+
+    padding: 0;
   }
 }
 
 .page-header__login {
   display: block;
-  margin-right: 36px;
+  margin-bottom: 20px;
+  margin-left: 36px;
 
   @include vp-1023 {
     position: absolute;
@@ -170,6 +175,8 @@
 .page-header__basket {
   display: block;
   margin-right: 1px;
+  margin-bottom: 20px;
+  margin-left: 36px;
 
   @include vp-1023 {
     position: absolute;

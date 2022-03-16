@@ -183,8 +183,8 @@
   }
 
   @include vp-767 {
-    padding-right: 53px;
     padding-top: 24px;
+    padding-right: 53px;
     padding-bottom: 24px;
   }
 
@@ -355,6 +355,7 @@
 }
 
 .filter__range-toggle {
+  display: none;
   width: 15px;
   height: 15px;
 
@@ -382,6 +383,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.filter__block.is-active .filter__range-toggle {
+  display: block;
 }
 
 .filter__toggle-wrapper span {
@@ -471,4 +476,12 @@
   @include vp-767 {
     padding: 0 25px 25px;
   }
+}
+
+.filter__block input {
+  display: none;
+}
+
+.filter__block.is-active input {
+  display: block;
 }
